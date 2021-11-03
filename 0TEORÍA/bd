@@ -1,0 +1,23 @@
+SENTENCIAS BD
+- mysqli_connect(servidor, usu, pw, nom_bd) (localhost, jose, josefa, ...): DEVUELVE OBJTEO (?) CONEXIÓN (análogo a @$fd que usábamos en tratamiento ficheros) => RECOGEMOS CON @$conexion
+- mysqli_connect_errno(): (regla mnemotécnica: Err nº)
+- mysqli_connect_error(): Se usa en combinacion con el de arriba indicando primero el nº de error y luego mostrando este (mns explicativo) en el die de conex
+
+- mysqli_set_charset($conex, "utf8"): Pues eso, necesario justo después de realiar conex
+- mysqli_close($conex): Obvio
+
+[Preparación consulta: almacenamos el string de la consulta en una var]
+- mysqli_query($conex, $consulta): Devuelve los registros que cumplan la $consulta. Almacenamos en $res (sin @)
+- mysqli_num_rows($res): Devuelve el nº registros que obtuvo la resolución de la consulta ($res)
+
+- mysqli_errno(): (regla mnemotécnica: Err nº)
+- mysqli_error(): ÍDEM ERRORES CONEXION PERO EN ERRORES DE CONSULTA
+
+- mysqli_fetch_row(): ARRAY DE FILAS, CON CADA FILA ESCALAR POR CADA FILA CON ÍNDICES 0,1,... Y VALOR "VALOR DE ESE INDICE". VA PASANDO A LA SIG FILA
+- mysqli_fetch_assoc(): IGUAL PERO ARRAYS SON ASOCIATIVO => ÍNDICES = NOMBRES COLS
+- mysqli_fetch_array():HABILITA TANTO USARLO CON ÍNDICES ESCALARES COMO ASOCIATIVOS PQ DEVUELVE LOS 2 (ARRAY MIXTO)
+- mysqli_fetch_object():
+
+-mysqli_free_result($res): LIBERAR RESULTADO; SOLO CUANDO HAGAMOS SELECT 
+
+- mysqli_data_seek($res, nByte): (bytes) MUEVE EL PUNTERO AL BYTE INDICADO. ÚNICO USO PRÁCTICO REAL => MOVERLO AL PRINCIPIO CON 0

@@ -1,0 +1,17 @@
+cuentas de usu: agregar cuenta
+nom usu: jose
+host: localhost
+pw: josefa
+selecc todo
+
+bbdd:
+nombre bd_teoria y utf por defecto vale (utf6mb4_general_ci)
+crear tabla alumnos (nº columnas opcional y ademas despues se puede variar)
+
+DISEÑADOR:
+ESTANDO EN BD (MIRAR MENU MIGAS DE PAN) => CLICAR DISEÑADOR (arriba derecha)
+CREAR RELACION: MENU LATERAL IZQ > CREAR RELACION > PRIMERO LA PRIMARIA Y LUEGO LA FORANEA
+(PARA BORRAR RELACIÓN => CLICAR EN CIRULO EN EXTREMO DE LA RELACIÓN)
+
+INSERTAR REGISTRO:
+SELECC TABLA; MENU ARRIBA ISNERTAR > ELEGIR Nº REGISTROS ABAJO (OPCIONAL) > ISNERTAR DATOS & CONTINUAR > ¡¡¡LUEGO NO CONTINUAR PQ EXE SENTENCIA OTRA VEZ!!!. EN ESTA MISMA PANTALLA SE PUEDEN VER SINTAXIS DE SENTENCIAS GENÉRICAS
